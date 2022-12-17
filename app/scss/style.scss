@@ -1,0 +1,159 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header{
+    position: relative;
+    height: 100vh;
+}
+
+.header__slider{
+    &-item{
+        height: 100vh;
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.slider-item__info{
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-item__info-subtitle{
+    margin-bottom: 5px;
+}
+
+.slider-item__info-subtext{
+    margin-bottom: 8px;
+}
+
+.slider-item__info-title{
+    font-size: 80px;
+    line-height: 86px;
+    font-weight: 800;
+    margin-bottom: 48px;
+    color: #fff;
+}
+
+.slider-item__info-text{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.slider-arrows{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.slider-arrows__left{
+    right: 125px;
+}
+
+.slider-dots{
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+    max-width: 920px;
+    width: 100%;
+    color: #fff;
+    .slick-current{
+        .dots-box{
+            border-top: 4px solid $green;
+        }
+    }
+}
+
+.dots-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    align-items: center;
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+    &__number{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 34px;
+    }
+    &__name{
+        font-weight: 300;
+        line-height: 19px;
+    }
+}
+
+.header__aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba(#fff, .25);
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.header__title{
+    max-width: 467px;
+    text-transform: uppercase;
+    font-size: 200px;
+    line-height: 156px;
+    color: #fff;
+    font-weight: 800;
+    opacity: 0.07;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.menu{
+    a{
+        color: #fff;
+        span{
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 3px;
+            font-weight: 500;
+            padding-top: 6px;
+            margin-bottom: 37px;
+        }
+    }
+}
+
+.header__date{
+    font-size: 72px;
+    line-height: 64px;
+    font-weight: 800;
+    span{
+        padding-top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1.4px;
+        margin-bottom: 30px;
+        display: block;
+    }
+}
+
+
+
+
+
+
+@import "media";
