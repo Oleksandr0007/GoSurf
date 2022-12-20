@@ -33,4 +33,14 @@ $(function(){
         focusOnSelect: true
     });
 // end block SURF slider dots on map
+// block TRAVEL main slider
+    $('.travel__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        fade: true,
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
+    });
+// end block TRAVEL main slider
 });

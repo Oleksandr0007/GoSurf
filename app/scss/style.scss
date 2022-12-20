@@ -200,7 +200,6 @@
 // header end
 // block SUSF
 .serf{
-    padding: 160px 0 120px;
     background-image: url(../img/serf-bg.png);
     background-position: right 200px;
     background-repeat: no-repeat;
@@ -495,17 +494,105 @@
 // block SURF end
 // block TRAVEL
 
+.travel{
+    background-image: url(../img/travel-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    .slider-arrows{
+        top: 225px;
+        opacity: 0.5;
+    }
+}
+
+.travel-slider{
+    &__head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+    &__descr{
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        margin-top: -250px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .descr__head{
+            position: relative;
+            padding-right: 78px;
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &__subtitle{
+        text-align: right;
+        padding: 132px 80px 0 0;
+    }
+    &__btn{
+        text-align: center;
+    }
+}
+
+.travel-slider__info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.travel-slider__info-item{
+    min-height: 200px;
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.travel-slider__info-subtitle{
+    position: absolute;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+    font-size: 18px;
+    top: 97px;
+    left: -97px;
+    width: 200px;
+    height: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.travel-slider__info-title{
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 800;
+    padding-left: 40px;
+    position: relative;
+    span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: right;
+        letter-spacing: 5.25px;
+        opacity: 0.75;
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // block TRAVEL end
-
-
-
-
-
-
-
-
-
 
 @import "media";
