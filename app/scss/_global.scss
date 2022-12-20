@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -20,7 +30,12 @@ li{
     padding: 0;
 }
 
-.subtitle-left{
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.headline-left{
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -38,5 +53,50 @@ li{
         background-color: #fff;
         left: 0;
         top: 50%;
+    }
+}
+
+.subtitle{
+    display: inline-block;
+    text-align: right;
+    &__head{
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+        span{
+            font-weight: 100;
+        }
+    }
+}
+
+.btn{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    span{
+        padding: 17px 57px 15px 17px;
+        background-color: $green;
+        display: inline-block;
+        margin-left: 19px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url(../img/arrows-right.svg);
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
     }
 }

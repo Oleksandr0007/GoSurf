@@ -60,7 +60,7 @@
     right: 125px;
 }
 
-.slider-dots{
+.slider-dotshead{
     position: absolute;
     right: 50px;
     bottom: 36px;
@@ -200,7 +200,95 @@
 // header end
 
 .serf{
-    padding: 160px 0 210px;
+    padding: 160px 0 120px;
+    background-image: url(../img/serf-bg.png);
+    background-position: right 200px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.serf__subtitle{
+    text-align: right;
+    padding-right: 80px;
+    margin-top: -86px;
+}
+
+.serf-slider{
+    padding-top: 110px;
+    .slider-arrows{
+        top: 50px;
+        opacity: 0.25;
+    }
+    .slick-slide:nth-child(4n + 1){
+        .serf-box{
+            margin-top: 32px;
+        }
+    }
+    .slick-slide:nth-child(4n + 3){
+        .serf-box{
+            margin-top: 89px;
+        }
+    }
+}
+
+.slick-current{
+    .serf-box__inner-btn{
+        display: block;
+    }
+    .serf-box__inner{
+        background: rgba(#1C2121, .3);
+    }
+}
+
+.serf-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    &__inner{
+      min-height: 750px;  
+      background: rgba(#1C2121, .85);
+      position: relative;
+      transition: all .5s;
+      &:hover{
+        background: rgba(#1C2121, .3);
+        .serf-box__inner-btn{
+            display: block;
+        }
+    }
+    }
+}
+
+.serf-box__inner-title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    padding: 72px 0 0 40px;
+    width: 140px;
+}
+
+.serf-box__inner-location{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 40px;
+    bottom: 80px;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    span{
+        font-weight: 100;
+    }
+}
+
+.serf-box__inner-btn{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
 .title{
@@ -231,7 +319,26 @@
     }
 }
 
+.slider-map{
+    max-width: 1200px;
+    min-height: 635px;
+    background-image: url(../img/world-map-dots.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+}
 
+.slider-dots__circle{
+    width: 24px;
+    height: 24px;
+    background-color: $green;
+    border-radius: 50%;
+}
+
+.slider-dots__content-row{
+    display: none;
+}
 
 
 
