@@ -22,6 +22,7 @@
     "sass": "^1.56.2"
   },
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "slick-carousel": "^1.8.1"
   }
 }

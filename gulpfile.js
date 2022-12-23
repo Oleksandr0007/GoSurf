@@ -88,3 +88,14 @@ gulp.task('watch', function(){
 gulp.task('build', gulp.series('clean', 'export'))
 
 gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));
+
+var gulpp = require('gulp');
+var deploy = require('gulp-gh-pages');
+
+gulpp.task('deploy', function () {
+  return gulpp.src("./app/**/*")
+    .pipe(deploy({
+      remoteUrl: "https://github.com/Oleksandr0007/GoSurf.git",
+      branch: "main"
+    }))
+});
