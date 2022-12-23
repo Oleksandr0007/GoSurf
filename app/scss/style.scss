@@ -356,6 +356,7 @@
     margin: 0 auto;
     .slick-list{
         min-height: 635px;
+        overflow: visible;
     }
     .slick-current{
         .slider-dots__content{
@@ -425,6 +426,7 @@
     height: 23px;
     background-color: $green;
     border-radius: 50%;
+    box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 
 .slider-dots__content{
@@ -443,7 +445,7 @@
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
         bottom: -21px;
-        left: 50%;
+        left: calc(50% - 1px);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -459,7 +461,7 @@
     .slider-dots__content{
         transform: translateX(0);
         &::before{
-            left: 0;
+            left: calc(0px - .5px);
         }
     }
 }
@@ -514,7 +516,7 @@
         transform: translateX(-262px);
         &::before{
             left: auto;
-            right: 0;
+            right: calc(0px - .5px);
         }
     }
 }
