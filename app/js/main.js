@@ -57,6 +57,11 @@ $(function(){
         $(this).toggleClass('active')
     });
 // end block SHOP animation clock on dots at board
+// menu adaptive animation
+    $('.menu-btn').on('click', function () {
+        $('.menu').toggleClass('menu-active')
+    });
+// end menu adaptive animation
 });
 
 // input type number script
