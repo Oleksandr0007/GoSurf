@@ -238,7 +238,7 @@
         }
         li::before {
             content: "SY";
-            color: rgba(#fff, 0.01);
+            color: rgba(#fff, 0.1);
             font-weight: 800;
             font-size: 50px;
             position: absolute;
@@ -457,7 +457,7 @@
         padding-left: 15px;
     }
     .header__arrows {
-        bottom: 80px;
+        bottom: 120px;
         left: 25px;
         img{
             width: 20px;
@@ -495,7 +495,7 @@
         width: 100vw;
     }
     .slider-item__info {
-        bottom: 79px;
+        bottom: 127px;
     }
     .serf {
         padding: 56px 0 40px;
@@ -622,7 +622,7 @@
         min-height: 130px;
     }
     .quantity input {
-        width: 16px;
+        width: 26px;
         font-size: 18px;
     }
     .holder-slider__info-title .holder-pricing__span {
