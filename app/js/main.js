@@ -12,6 +12,12 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         asNavFor: '.header__slider',
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: "unslick"
+            }
+        ]
     });
     // end header dots slider
 // end header main slider
@@ -26,7 +32,13 @@ $(function(){
             {
                 breakpoint: 1210,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
                 }
             }
         ]

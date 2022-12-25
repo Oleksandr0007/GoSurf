@@ -267,10 +267,13 @@
     }
 }
 
+
 .serf-box{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    &__wrapper{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
     &__inner{
       min-height: 750px;  
       background: rgba(#1C2121, .85);
@@ -347,7 +350,8 @@
 }
 
 .slider-map{
-    max-width: 1200px;
+    max-width: 100vw;
+    width: 95%;
     min-height: 635px;
     background-image: url(../img/world-map-dots.png); 
     background-repeat: no-repeat;
