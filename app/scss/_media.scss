@@ -83,6 +83,11 @@
     .serf-box__inner {
         min-height: 650px;
     }
+    .shop__slider-btn {
+        a {
+            font-size: 35px;
+        }
+    }
 }
 
 @media (max-width: 1250px) {
@@ -140,6 +145,30 @@
         bottom: -24px;
         left: calc(50% + 0px);
     }
+    .shop__slider {
+        padding-left: 60px;
+    }
+    .shop__slider-content {
+        padding-left: 40px;
+    }
+    .shop__slider-price {
+        margin-bottom: 50px;
+    }
+    .shop__slider-inner{
+        display: block;
+    }
+    .shop__slider-info{
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+    .surfboard__position--3 .surfboard-box__content{
+        left: 60px;
+    }
+    .surfboard__position--3 .surfboard-box__content::before {
+        width: 20px;
+        right: auto;
+        left: -32px;
+    }
 }
 
 @media (max-width: 1175px) {
@@ -161,6 +190,9 @@
 @media (max-width: 1175px) {
     .holder-slider__descr {
         padding: 159px 0 0 20px;
+    }
+    .shop__slider {
+        padding-left: 20px;
     }
 }
 
@@ -228,7 +260,7 @@
         right: 0;
         bottom: 0;
         display: flex;
-        width: calc(100vw - 18px) ;
+        width: 100vw;
         height: 100vh;
         justify-content: center;
         align-items: center;
@@ -244,7 +276,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 100px;
+            bottom: 18%;
         }
     }
     .header__search{
@@ -348,6 +380,9 @@
     }
     .title h3 {
         font-size: 70px;
+    }
+    .descr__head {
+        font-size: 35px;
     }
 }
 
@@ -556,7 +591,6 @@
     }
     .slick-slide img {
         display: block;
-        width: 70%;
     }
     .slider-dots__content-title {
         font-size: 15px;
@@ -603,17 +637,53 @@
             }
         }
     }
+    .surfboard-box__content::before {
+        width: 41px;
+    }
+    .surfboard-box__content {
+        font-size: 24px;
+        line-height: 24px;
+        padding-left: 55px;
+        font-size: 17px;
+    }
+    .shop .slider-arrows {
+        top: 20px;
+    }
+    .descr__head-shop {
+        margin-bottom: 0;
+    }
+    .shop__slider-price {
+        font-size: 28px;
+    }
+    .shop__slider-content{
+        display: block;
+    }
+    .surfboard__position--1 {
+        left: 170px;
+    }
+    .shop__extras {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .shop__extras-title {
+        padding-left: 120px;
+    }
+    .holder-slider__btn {
+        text-align: center;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 640px) {
     .holder-slider__info-title {
         font-size: 18px;
         line-height: 22px;
-        padding-left: 22px;
+        padding-left: 16px;
     }
     .holder-slider__info-subtitle {
         letter-spacing: 3px;
         font-size: 10px;
+        left: -107px;
     }
     .holder-slider__head {
         min-height: 731px;
@@ -627,6 +697,9 @@
     }
     .holder-slider__info-title .holder-pricing__span {
         letter-spacing: 1.25px;
+    }
+    .surfboard__position--1 {
+        left: 36px;
     }
 }
 
@@ -649,6 +722,15 @@
     .slider-dots--6 {
         top: 346px;
         left: -45px;
+    }
+    .surfboard-box__circle.active+.surfboard-box__content {
+        width: 319px;
+    }
+    .descr__head {
+        font-size: 28px;
+    }
+    .shop__slider-price {
+        font-size: 23px;
     }
 }
 
@@ -728,14 +810,19 @@
     .holder-slider__descr .descr__head .holder__star-list img {
         margin-left: -10px;
     }
-}
-
-@media (max-width: 400px) {
-    .serf__subtitle {
-        margin-top: -38px;
+    .footer {
+        padding: 100px 0 20px;
+    }
+    .shop__extras-title {
+        padding-left: 100px;
+    }
+    .shop__extras-name {
+        line-height: 17px;
+        font-size: 15px;
+        letter-spacing: 8px;
+        margin-bottom: 5px;
     }
 }
-
 
 @media (max-width: 400px) {
     .slider-item__info-title {
@@ -744,5 +831,17 @@
     .headline-left::before {
         width: 32px;
         left: 23px;
+    }
+    .shop__slider-content {
+        padding-left: 10px;
+    }
+    .serf__subtitle {
+        margin-top: -38px;
+    }
+    .surfboard__position--2 {
+        left: 2px;
+    }
+    .surfboard-box__circle.active+.surfboard-box__content {
+        width: 260px;
     }
 }
