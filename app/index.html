@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+
+<!-- preloader -->
+  <div id="page__preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+<!-- end preloader -->
+
 <!-- first screen header-->
   <header class="header">
     <div class="header__title">
@@ -54,10 +61,10 @@
       </div>
       <nav class="menu">
         <ul class="menu__list">
-          <li><a href="#"><img src="img/nav-ico-1.svg" alt="#"><span>Surf</span></a></li>
-          <li><a href="#"><img src="img/nav-ico-2.svg" alt="#"><span>Travel</span></a></li>
-          <li><a href="#"><img src="img/nav-ico-3.svg" alt="#"><span>Sleep</span></a></li>
-          <li><a href="#"><img src="img/nav-ico-4.svg" alt="#"><span>Shop</span></a></li>
+          <li><a href="#surf"><img src="img/nav-ico-1.svg" alt="#"><span>Surf</span></a></li>
+          <li><a href="#travel"><img src="img/nav-ico-2.svg" alt="#"><span>Travel</span></a></li>
+          <li><a href="#sleep"><img src="img/nav-ico-3.svg" alt="#"><span>Sleep</span></a></li>
+          <li><a href="#shop"><img src="img/nav-ico-4.svg" alt="#"><span>Shop</span></a></li>
         </ul>
       </nav>
       <div class="header__search">
@@ -76,9 +83,9 @@
       <div class="header__slider-item slider-item">
         <div class="slider-item__info">
           <div class="slider-item__info-subtitle headline-left">Surf</div>
-          <div class="slider-item__info-title animate__animated animate__fadeInRight">North Shore</div>
+          <div class="slider-item__info-title">North Shore</div>
           <div class="slider-item__info-subtext headline-left">Condition</div>
-          <div class="slider-item__info-text animate__animated animate__fadeInRight">Radical</div>
+          <div class="slider-item__info-text">Radical</div>
           <a class="slider-item__info-link" href="#">
             <img src="img/arrows-right.svg" alt="#">
           </a>
@@ -151,7 +158,7 @@
 <!-- end first screen header -->
 <!-- second screen, block SURF -->
   <div class="container">
-    <section class="serf">
+    <section id="surf" class="serf">
       <div class="title">
         <div>
           <span class="wow fadeInLeft" data-wow-offset="200">surf</span> 
@@ -536,7 +543,7 @@
     </section>
 <!-- end second screen, block SURF -->
 <!-- block TRAVEL -->
-    <section class="holder">
+    <section id="travel" class="holder">
       <div class="container">
         <div class="title">
           <div>
@@ -879,7 +886,7 @@
     </section>
 <!-- end block TRAVEL -->
 <!-- block SLEEP -->
-    <section class="holder sleep">
+    <section id="sleep" class="holder sleep">
       <div class="container">
         <div class="title">
           <div>
@@ -1389,7 +1396,7 @@
     </section>
 <!-- end block SLEEP -->
 <!-- block shop -->
-    <section class="shop">
+    <section id="shop" class="shop">
       <div class="title">
         <div>
           <span class="wow fadeInLeft" data-wow-offset="200">shop</span>
