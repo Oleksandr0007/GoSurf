@@ -322,13 +322,16 @@
 }
 
 .title{
-    span{
+    div{
         font-size: 200px;
         font-weight: 800;
         color: rgba(#fff, .02);
         position: relative;
         display: inline-block;
         transform: translateX(-50px);
+    }
+    span{
+        display: inline-block;
     }
     h3{
         position: absolute;
@@ -440,6 +443,7 @@
     position: absolute;
     bottom: 35px;
     transform: translateX(-50%);
+    z-index: 1;
     &::before{
         content: '';
         position: absolute;

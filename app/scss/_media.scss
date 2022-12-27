@@ -224,7 +224,7 @@
     .holder {
         padding: 55px 0 120px;
     }
-    .title span {
+    .title div {
         font-size: 150px;
     }
     .holder-slider__info-title {
@@ -375,7 +375,7 @@
     .header__arrows {
         bottom: 10px;
     }
-    .title span {
+    .title div {
         font-size: 150px;
     }
     .title h3 {
@@ -542,7 +542,7 @@
         padding-right: 17px;
         margin-top: -89px;
     }
-    .title span {
+    .title div {
         font-size: 120px;
     }
     .title h3 {
@@ -732,10 +732,14 @@
     .shop__slider-price {
         font-size: 23px;
     }
+    .holder-slider__descr {
+        margin-top: -291px;
+        padding: 152px 0 0 20px;
+    }
 }
 
 @media (max-width: 500px) {
-    .title span {
+    .title div {
         font-size: 90px;
     }
     .title h3 {
