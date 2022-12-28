@@ -93,6 +93,9 @@ $(function(){
     $('.menu-btn').on('click', function () {
         $('.menu').toggleClass('menu-active')
     });
+    $('.surf__link, .travel__link, .sleep__link, .shop__link').on('click', function () {
+        $('.menu').removeClass('menu-active')
+    });
 // end menu adaptive animation
 });
 

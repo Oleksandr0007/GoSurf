@@ -284,7 +284,12 @@
     position: absolute;
     left: 210px;
     bottom: 30px;
-    z-index: 3;
+    a{
+        position: absolute;
+        z-index: 8;
+        cursor: pointer;
+        transition: all 1s;
+    }
 }
 
 .line-animation{
