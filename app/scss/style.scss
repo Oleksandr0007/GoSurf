@@ -81,6 +81,9 @@
     position: relative;
     height: 100vh;
 }
+.menu-btn__inner {
+    display: none;
+}
 
 .header__slider{
     &-item{
