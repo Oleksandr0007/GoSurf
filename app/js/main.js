@@ -2,9 +2,15 @@
 document.body.onload = function() {
     setTimeout(function() {
         var preloader = document.getElementById('page__preloader');
-        if( !preloader.classList.contains('done') )
+        var sliderdotshead = document.getElementById('slider-dotshead');
+        var slideritem__info = document.getElementById('slider-item__info');
+        var header__aside = document.getElementById('header__aside');
+            if( !preloader.classList.contains('done') )
         {
             preloader.classList.add('done');
+            sliderdotshead.classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s');
+            slideritem__info.classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-0.5s');
+            header__aside.classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-0.5s');
         }
     }, 1000);
 }
